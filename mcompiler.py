@@ -7,7 +7,7 @@
 Usage:
 ./mcompiler.py <myplugin.cpp>
 '''
-_version = '0.1.0'
+_version = '0.1.1'
 
 import re
 import os
@@ -78,7 +78,7 @@ def compile(path):
 
 if __name__ == '__main__':
     if len(sys.argv)<2:
-        print ('Please give me a input cpp file')
+        print ('Please give me an input cpp file')
     else:
         path = os.path.abspath(sys.argv[1])
         compile(path)
